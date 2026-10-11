@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#050609">
+    <meta name="description" content="Uma bio pessoal com vídeo em loop e visual liquid glass.">
+    <title>Bio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="anim.js" defer></script>
+  </head>
+  <body>
+    <main class="biosite">
+      <section class="video-stage" aria-label="Vídeo de fundo">
+        <video class="background-video" id="background-video" autoplay muted loop playsinline preload="auto" aria-hidden="true">
+          <source id="background-video-source" type="video/mp4">
+        </video>
+        <div class="video-shade"></div>
+        <p class="video-message" id="video-message" role="status" hidden></p>
+
+        <article class="profile-card" aria-label="Perfil">
+          <div class="profile-glow"></div>
+          <img class="profile-avatar" id="profile-avatar" alt="">
+          <div class="avatar-fallback" id="avatar-fallback" aria-hidden="true"></div>
+          <h2 id="profile-name"></h2>
+          <p id="profile-subtitle"></p>
+        </article>
+      </section>
+
+      <footer class="player-footer">
+        <button class="icon-button copy-button" id="copy-link" type="button" aria-label="Copiar link do perfil" title="Copiar link do perfil">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M10 13.5 14 9.5"></path>
+            <path d="M8.5 15H7a4 4 0 0 1 0-8h4"></path>
+            <path d="M15.5 9H17a4 4 0 0 1 0 8h-4"></path>
+          </svg>
+        </button>
+        <span class="view-count" aria-live="polite"><span id="view-count">—</span> visualizações</span>
+        <button class="icon-button sound-toggle" id="sound-toggle" type="button" aria-label="Ativar som" title="Ativar som" aria-pressed="false">
+          <svg class="volume-muted" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M11 5 6 9H3v6h3l5 4V5Z"></path>
+            <path d="m16 9 5 6m0-6-5 6"></path>
+          </svg>
+          <svg class="volume-on" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M11 5 6 9H3v6h3l5 4V5Z"></path>
+            <path d="M15.5 8.5a5 5 0 0 1 0 7"></path>
+            <path d="M18.5 5.5a9 9 0 0 1 0 13"></path>
+          </svg>
+        </button>
+      </footer>
+    </main>
+  </body>
+</html>

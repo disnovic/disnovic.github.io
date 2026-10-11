@@ -1,0 +1,18 @@
+{
+  "backgroundVideo": "db/background.mp4",
+  "activeProfile": "miguel",
+  "profiles": [
+    {
+      "id": "disnovic",
+      "name": "disnovic",
+      "subtitle": "roblox game dev",
+      "image": "db/1.jpg"
+    },
+   {
+      "id": "miguel",
+      "name": "miguel",
+      "subtitle": "roblox game dev",
+      "image": "db/1.jpg"
+    }
+  ]
+}
